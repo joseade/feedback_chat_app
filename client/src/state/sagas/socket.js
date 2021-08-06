@@ -4,7 +4,6 @@ import createSocketChannel from "../sockets/index";
 import * as actionsSocket from "../actions/socket";
 
 function connect() {
-  //const socket = io("http://localhost:5000");
 
   const socket = io(window.location.origin, {
     path: "/socket/socket.io/",

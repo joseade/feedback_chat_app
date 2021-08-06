@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: socket-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: socket
+  template:
+    metadata:
+      labels:
+        component: socket
+    spec:
+      containers:
+        - name: socket
+          image: pumajosleaa/socket
+          ports:
+            - containerPort: 5000

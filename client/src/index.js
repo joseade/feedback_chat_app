@@ -26,7 +26,6 @@ import {
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseURL = window.location.origin + "/api";
-//axios.defaults.baseURL = "http://localhost:4000";
 
 const logger = createLogger();
 const sagaMiddleware = createSagaMiddleware();

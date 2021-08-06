@@ -48,9 +48,6 @@ app.get("*", () => {
 });
 app.use(errorHandler);
 
-//console.log(process.env.MONGO_URL);
-//""mongodb://mongodb-service:27017/chatapp""
-//"mongodb+srv://ade:123@cluster0.lqbvu.mongodb.net/chatapp"
 const start = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URL, {
